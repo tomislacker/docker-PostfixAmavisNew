@@ -1,0 +1,8 @@
+use strict;
+use Sys::Hostname;
+
+my $localHostname=hostname();
+my $relaySuffix="-mailrelay.telkonet.com";
+
+$myhostname = "${localHostname}${relaySuffix}";
+
